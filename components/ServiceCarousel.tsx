@@ -16,9 +16,9 @@ const allServices = [
   { title: "Sofa & Chair Upholstery", image: "/our-service-three.jpg" },
   { title: "Bedroom & Living room Recreation", image: "/our-service-two.jpg" },
   { title: "Wallpaper & Wall decor", image: "/our-service-four.png" },
-  { title: "Paneling & Cladding", image: "/interior_design.png" },
-  { title: "Hospital Furniture", image: "/fitout_furniture.png" },
-  { title: "Kitchen & Wardrobe", image: "/joinery_upholstery.png" },
+  { title: "Paneling & Cladding", image: "/paneling_cladding.png" },
+  { title: "Hospital Furniture", image: "/hospital_furniture.png" },
+  { title: "Kitchen & Wardrobe", image: "/kitchen_wardrobe.png" },
 ];
 
 export default function ServiceCarousel() {
