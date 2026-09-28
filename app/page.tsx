@@ -1,7 +1,8 @@
 import Hero from "../components/Hero";
 import About from "../components/About";
-import Services from "../components/Services";
+import ServiceCarousel from "../components/ServiceCarousel";
 import StickyFeatures from "../components/StickyFeatures";
+import OurClients from "../components/OurClients";
 import Contact from "../components/Contact";
 import ScrollMarquee from "../components/ScrollMarquee";
 
@@ -14,9 +15,11 @@ export default function Home() {
       {/* Scroll Marquee Section */}
       <ScrollMarquee />
       
-      <Services />
+      <ServiceCarousel />
       
       <StickyFeatures />
+      
+      <OurClients />
       <Contact />
     </main>
   );
