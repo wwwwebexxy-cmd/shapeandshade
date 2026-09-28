@@ -1,0 +1,127 @@
+.footer {
+  background: rgba(0, 0, 0, 0.8);
+  border-top: 1px solid var(--card-border);
+  padding-top: 4rem;
+  margin-top: 4rem;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 3rem;
+  padding-bottom: 3rem;
+}
+
+.brand {
+  flex: 2;
+  min-width: 280px;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--foreground);
+  margin-bottom: 1rem;
+}
+
+.description {
+  color: var(--text-muted);
+  line-height: 1.6;
+  max-width: 350px;
+}
+
+.linksGroup {
+  flex: 1;
+  min-width: 150px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.columnTitle {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--foreground);
+}
+
+.link {
+  color: var(--text-muted);
+  transition: color 0.2s ease;
+}
+
+.link:hover {
+  color: var(--primary);
+}
+
+.bottomBar {
+  border-top: 1px solid var(--card-border);
+  padding: 2rem;
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 0.875rem;
+}
+
+.socialLinks {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.socialIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--foreground);
+  font-size: 1.25rem;
+  transition: all 0.3s ease;
+}
+
+.socialIcon:hover {
+  background: var(--primary);
+  color: #fff;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(212, 175, 55, 0.3); /* matching potential primary color vibe */
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding-top: 2rem;
+    margin-top: 2rem;
+  }
+  .container {
+    flex-direction: column;
+    gap: 1.5rem;
+    padding-bottom: 1.5rem;
+    align-items: center;
+    text-align: center;
+  }
+  .brand {
+    min-width: 100%;
+  }
+  .logo {
+    font-size: 1.25rem;
+  }
+  .description {
+    font-size: 0.875rem;
+    margin: 0 auto;
+  }
+  .columnTitle {
+    font-size: 1rem;
+  }
+  .link {
+    font-size: 0.875rem;
+  }
+  .linksGroup {
+    align-items: center;
+  }
+  .bottomBar {
+    padding: 1rem;
+    font-size: 0.75rem;
+  }
+}

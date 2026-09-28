@@ -1,0 +1,150 @@
+.preloader-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none; /* Let clicks pass through after animation */
+}
+
+/* Base Curtain Styles */
+.curtain {
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  width: 50vw;
+  background-color: #000000;
+  z-index: 10000;
+  transition: transform 1.5s cubic-bezier(0.77, 0, 0.175, 1);
+  pointer-events: auto; /* Block clicks while active */
+}
+
+.curtain-left {
+  left: 0;
+  transform: translateX(0);
+}
+
+.curtain-right {
+  right: 0;
+  transform: translateX(0);
+}
+
+/* Animate out */
+.is-animating .curtain-left {
+  transform: translateX(-100%);
+  pointer-events: none;
+}
+
+.is-animating .curtain-right {
+  transform: translateX(100%);
+  pointer-events: none;
+}
+
+/* Content (Logo) */
+.preloader-content {
+  position: relative;
+  z-index: 10001;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  pointer-events: auto;
+}
+
+/* Logo SVG Animation */
+.logo-box {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-svg {
+  width: 100%;
+  height: 100%;
+  filter: drop-shadow(0 0 10px rgba(212, 175, 55, 0.3));
+}
+
+.logo-text {
+  text-align: center;
+  color: #ffffff;
+  letter-spacing: 0.2em;
+}
+
+.title {
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  font-size: 2.5rem;
+  margin: 0;
+  color: #e0e0e0;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+}
+
+.subtitle {
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  color: #a0a0a0;
+  letter-spacing: 0.4em;
+}
+
+/* Fade out content before curtains open */
+.preloader-content.fade-out {
+  opacity: 0;
+  transform: scale(0.95);
+  pointer-events: none;
+}
+
+/* Loading progress line */
+.loading-bar-container {
+  width: 150px;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 2px;
+  overflow: hidden;
+  position: relative;
+  margin-top: -0.5rem;
+}
+
+.loading-bar-progress {
+  height: 100%;
+  width: 100%;
+  background-color: #d4af37;
+  border-radius: 2px;
+  transform-origin: left;
+  animation: loadProgress 2s ease-in-out infinite;
+}
+
+@keyframes loadProgress {
+  0% { transform: scaleX(0); opacity: 1; }
+  50% { transform: scaleX(1); opacity: 1; }
+  100% { transform: scaleX(1); opacity: 0; }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .logo-box {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .loading-bar-container {
+    width: 100px;
+  }
+  
+  .title {
+    font-size: 1.8rem;
+  }
+  
+  .subtitle {
+    font-size: 0.8rem;
+  }
+}
