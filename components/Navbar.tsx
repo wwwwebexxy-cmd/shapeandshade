@@ -9,27 +9,29 @@ export default function Navbar() {
 
   return (
     <nav className={styles.navbar}>
-      <div className={styles.logo}>
-        <Link href="#home">
-          <img src="/logo-shapes-shade.png" alt="Shapes and Shades Logo" style={{ height: '60px', width: 'auto', display: 'block' }} />
-        </Link>
-      </div>
+      <div className={styles.navContainer}>
+        <div className={styles.logo}>
+          <Link href="#home">
+            <img src="/logo-shapes-shade.png" alt="Shapes and Shades Logo" style={{ height: '60px', width: 'auto', display: 'block' }} />
+          </Link>
+        </div>
 
-      {/* Mobile Toggle Button */}
-      <button
-        className={styles.mobileToggle}
-        onClick={() => setIsOpen(!isOpen)}
-        aria-label="Toggle menu"
-      >
-        {isOpen ? "✕" : "☰"}
-      </button>
+        {/* Mobile Toggle Button */}
+        <button
+          className={styles.mobileToggle}
+          onClick={() => setIsOpen(!isOpen)}
+          aria-label="Toggle menu"
+        >
+          {isOpen ? "✕" : "☰"}
+        </button>
 
-      <div className={`${styles.navLinks} ${isOpen ? styles.navLinksOpen : ''}`}>
-        <Link href="#home" className={styles.navLink} onClick={() => setIsOpen(false)}>Home</Link>
-        <Link href="#about" className={styles.navLink} onClick={() => setIsOpen(false)}>About</Link>
-        <Link href="#services" className={styles.navLink} onClick={() => setIsOpen(false)}>Service</Link>
-        {/* <Link href="#features" className={styles.navLink} onClick={() => setIsOpen(false)}>Why Choose Us</Link> */}
-        <Link href="#contact" className={styles.navLink} onClick={() => setIsOpen(false)}>Contact</Link>
+        <div className={`${styles.navLinks} ${isOpen ? styles.navLinksOpen : ''}`}>
+          <Link href="#home" className={styles.navLink} onClick={() => setIsOpen(false)}>Home</Link>
+          <Link href="#about" className={styles.navLink} onClick={() => setIsOpen(false)}>About</Link>
+          <Link href="#services" className={styles.navLink} onClick={() => setIsOpen(false)}>Service</Link>
+          {/* <Link href="#features" className={styles.navLink} onClick={() => setIsOpen(false)}>Why Choose Us</Link> */}
+          <Link href="#contact" className={styles.navLink} onClick={() => setIsOpen(false)}>Contact</Link>
+        </div>
       </div>
     </nav>
   );

@@ -126,6 +126,24 @@
   height: 120px;
 }
 
+@media (max-width: 1550px) and (min-width: 1025px) {
+  .title {
+    font-size: 4rem;
+  }
+  .overlayContent {
+    max-width: 60%;
+  }
+  .overlayContentRight {
+    max-width: 45%;
+    bottom: 15%;
+    right: 5%;
+  }
+  .subtitle {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
 @media (max-width: 1024px) {
   .topLeftImage {
     clip-path: none;

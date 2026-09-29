@@ -5,11 +5,11 @@ import ScrollReveal from "./ScrollReveal";
 import styles from "./OurClients.module.css";
 
 const clientLogos = [
-  "https://shapesandshades.ae/wp-content/uploads/2026/09/maxresdefault-1-edited.jpg",
-  "https://shapesandshades.ae/wp-content/uploads/2026/09/Four_Points_Logo_neu-1300-1-1024x394.png",
-  "https://shapesandshades.ae/wp-content/uploads/2026/09/ADGPG-V2-1024x365.png",
-  "https://shapesandshades.ae/wp-content/uploads/2026/09/unnamed.png",
-  "https://shapesandshades.ae/wp-content/uploads/2026/09/logo.jpg"
+  "/clients/client1.webp",
+  "/clients/client2.webp",
+  "/clients/client3.webp",
+  "/clients/client4.webp",
+  "/clients/client5.webp"
 ];
 
 export default function OurClients() {
