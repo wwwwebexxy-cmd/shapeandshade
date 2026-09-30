@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
+import Image from "next/image";
 import "./Preloader.css";
 
 const Preloader = () => {
@@ -48,20 +49,15 @@ const Preloader = () => {
       
       {/* Logo Container */}
       <div className={`preloader-content ${isAnimating ? "fade-out" : ""}`}>
-        <div className="logo-box">
-          <svg viewBox="0 0 100 100" className="logo-svg" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect x="10" y="10" width="80" height="80" stroke="#d4af37" strokeWidth="2" />
-            <path d="M10 10 L45 35 L45 90 L10 90 Z" fill="#111" stroke="#d4af37" strokeWidth="1" />
-            <path d="M90 10 L45 35 L90 55 Z" fill="#d4af37" opacity="0.8" />
-            <path d="M45 90 L90 55 L90 90 Z" fill="#000" stroke="#d4af37" strokeWidth="1" />
-            <path d="M45 35 L45 90" stroke="#d4af37" strokeWidth="1" />
-            <path d="M45 35 L90 55" stroke="#d4af37" strokeWidth="1" />
-          </svg>
-        </div>
-        <div className="logo-text">
-          <h1 className="title">SHAPES & SHADES</h1>
-          <h2 className="subtitle">INTERIOR STUDIO</h2>
-        </div>
+        <Image
+          src="/shapes-shades-logo.webp"
+          alt="Shapes & Shades Interior Studio"
+          width={1178}
+          height={683}
+          className="preloader-logo"
+          sizes="(max-width: 768px) 240px, 340px"
+          priority
+        />
         <div className="loading-bar-container">
           <div className="loading-bar-progress"></div>
         </div>

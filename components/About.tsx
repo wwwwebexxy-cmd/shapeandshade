@@ -8,16 +8,9 @@ export default function About() {
         <div className={styles.imageWrapper}>
           <ScrollReveal direction="right" className={styles.imageMain}>
             <img 
-              src="/about-image.jpg" 
-              alt="Beautifully designed living room" 
-              style={{ width: '100%', height: '100%', objectFit: 'cover' }}
-            />
-          </ScrollReveal>
-          <ScrollReveal direction="left" delay={0.3} className={styles.imageOverlap}>
-            <img 
-              src="/about-image-2.jpg" 
-              alt="Interior design detail" 
-              style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+              src="/about-single-img.png" 
+              alt="Luxurious interior design" 
+              style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '1rem' }}
             />
           </ScrollReveal>
         </div>

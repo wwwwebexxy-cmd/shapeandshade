@@ -20,6 +20,11 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Shapes & Shades Interior Design | Premium Aesthetics in Al Ain",
   description: "Elevating your living spaces with bespoke interior design and premium aesthetics. Based in Al Ain, Abu Dhabi, UAE.",
+  icons: {
+    icon: "/favicon-matte-gold.webp",
+    shortcut: "/favicon-matte-gold.webp",
+    apple: "/favicon-matte-gold.webp",
+  },
   keywords: ["Interior Design", "Bespoke Interiors", "Shapes and Shades", "Al Ain Interior Design", "Abu Dhabi Interiors", "UAE", "Premium Aesthetics", "Home Decor", "Commercial Design", "Shapes and Shades LLC SPC"],
   openGraph: {
     title: "Shapes & Shades Interior Design",
@@ -84,7 +89,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <head>
-        <link rel="icon" type="image/webp" href="/favicon.webp" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

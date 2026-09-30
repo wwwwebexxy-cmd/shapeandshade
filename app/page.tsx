@@ -8,7 +8,7 @@ import ScrollMarquee from "../components/ScrollMarquee";
 
 export default function Home() {
   return (
-    <main className="bg-zinc-950 text-white min-h-screen">
+    <main className="min-h-screen">
       <Hero />
       <About />
       

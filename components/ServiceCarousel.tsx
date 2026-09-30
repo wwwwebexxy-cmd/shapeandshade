@@ -23,7 +23,7 @@ const allServices = [
 
 export default function ServiceCarousel() {
   return (
-    <section className="py-20 bg-zinc-950 overflow-hidden" id="services">
+    <section className="py-20 overflow-hidden bg-white" id="services">
       <div className="container mb-12">
         <ScrollReveal direction="up" delay={0.1}>
           <h2 className="section-title text-gradient text-center">Comprehensive Services</h2>

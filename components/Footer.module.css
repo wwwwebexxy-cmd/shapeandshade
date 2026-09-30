@@ -1,5 +1,5 @@
 .footer {
-  background: rgba(0, 0, 0, 0.8);
+  background: var(--background);
   border-top: 1px solid var(--card-border);
   padding-top: 4rem;
   margin-top: 4rem;
@@ -19,10 +19,16 @@
 }
 
 .logo {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: var(--foreground);
   margin-bottom: 1rem;
+  line-height: 0;
+}
+
+.logoImage {
+  display: block;
+  width: 260px;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
 }
 
 .description {
@@ -76,7 +82,7 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(0, 0, 0, 0.05);
   color: var(--foreground);
   font-size: 1.25rem;
   transition: all 0.3s ease;
@@ -86,7 +92,8 @@
   background: var(--primary);
   color: #fff;
   transform: translateY(-3px);
-  box-shadow: 0 5px 15px rgba(212, 175, 55, 0.3); /* matching potential primary color vibe */
+  box-shadow: 0 5px 15px rgba(212, 175, 55, 0.3);
+  /* matching potential primary color vibe */
 }
 
 @media (max-width: 768px) {
@@ -94,6 +101,7 @@
     padding-top: 2rem;
     margin-top: 2rem;
   }
+
   .container {
     flex-direction: column;
     gap: 1.5rem;
@@ -101,25 +109,37 @@
     align-items: center;
     text-align: center;
   }
+
   .brand {
     min-width: 100%;
   }
+
   .logo {
-    font-size: 1.25rem;
+    display: flex;
+    justify-content: center;
   }
+
+  .logoImage {
+    width: 220px;
+  }
+
   .description {
     font-size: 0.875rem;
     margin: 0 auto;
   }
+
   .columnTitle {
     font-size: 1rem;
   }
+
   .link {
     font-size: 0.875rem;
   }
+
   .linksGroup {
     align-items: center;
   }
+
   .bottomBar {
     padding: 1rem;
     font-size: 0.75rem;

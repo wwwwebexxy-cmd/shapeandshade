@@ -14,7 +14,7 @@ const clientLogos = [
 
 export default function OurClients() {
   return (
-    <section className="py-20 bg-zinc-950" id="our-clients">
+    <section className="py-20" id="our-clients">
       <div className="container">
         <ScrollReveal direction="up" delay={0.1}>
           <h2 className="section-title text-gradient text-center mb-12">Our Clients</h2>

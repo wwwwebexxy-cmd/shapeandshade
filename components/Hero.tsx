@@ -10,7 +10,7 @@ export default function Hero() {
              <ScrollReveal direction="up" delay={0.2}>
                <h1 className={styles.title}>
                 <span style={{ color: 'white' }}>Shaping Spaces</span><br />
-                <span style={{ color: '#c5a880' }}>Shading Lives</span>
+                <span style={{ color: 'var(--primary)' }}>Shading Lives</span>
               </h1>
              </ScrollReveal>
           </div>

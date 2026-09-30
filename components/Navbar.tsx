@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import styles from "./Navbar.module.css";
 
 export default function Navbar() {
@@ -13,7 +14,15 @@ export default function Navbar() {
       <div className={styles.navContainer}>
         <div className={styles.logo}>
           <Link href="/#home" onClick={closeMenu}>
-            <img src="/logo-shapes-shade.png" alt="Shapes and Shades Logo" style={{ height: '60px', width: 'auto', display: 'block' }} />
+            <Image
+              src="/shapes-shades-logo.webp"
+              alt="Shapes & Shades Interior Studio"
+              width={1178}
+              height={683}
+              priority
+              className={styles.logoImage}
+              sizes="(max-width: 768px) 170px, 220px"
+            />
           </Link>
         </div>
 

@@ -1,5 +1,6 @@
 import styles from "./Footer.module.css";
-import { FaInstagram,  FaFacebookF, FaSnapchatGhost, FaTiktok } from "react-icons/fa";
+import { FaInstagram, FaFacebookF, FaSnapchatGhost, FaTiktok } from "react-icons/fa";
+import Image from "next/image";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -9,7 +10,14 @@ export default function Footer() {
       <div className={`container ${styles.container}`}>
         <div className={styles.brand}>
           <div className={styles.logo}>
-            <img src="/logo-shapes-shade.png" alt="Shapes and Shades Logo" style={{ height: '80px', width: 'auto', display: 'block' }} />
+            <Image
+              src="/shapes-shades-logo.webp"
+              alt="Shapes & Shades Interior Studio"
+              width={1178}
+              height={683}
+              className={styles.logoImage}
+              sizes="(max-width: 768px) 220px, 280px"
+            />
           </div>
           <p className={styles.description}>
             Elevating your living spaces with bespoke interior design and premium aesthetics.
