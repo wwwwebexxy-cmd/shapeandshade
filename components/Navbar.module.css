@@ -19,6 +19,7 @@
   padding: 0 2rem;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 
 .logo {
@@ -50,13 +51,17 @@
   font-size: 1.5rem;
   cursor: pointer;
   padding: 0.5rem;
+  line-height: 1;
 }
 
 @media (max-width: 768px) {
   .navbar {
-    padding: 0.75rem 1rem;
-    flex-direction: row;
-    justify-content: space-between;
+    padding: 0.75rem 0;
+  }
+
+  .navContainer {
+    min-height: 60px;
+    padding: 0 1rem;
     flex-wrap: wrap;
   }
   
@@ -65,7 +70,12 @@
   }
 
   .mobileToggle {
-    display: block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 44px;
+    min-height: 44px;
+    margin-right: -0.5rem;
   }
   
   .navLinks {
@@ -74,10 +84,15 @@
     flex-direction: column;
     align-items: center;
     gap: 1.5rem;
-    padding: 1rem 0;
+    padding: 1.25rem 0 0.5rem;
   }
 
   .navLinksOpen {
     display: flex;
+  }
+
+  .navLink {
+    display: block;
+    padding: 0.5rem 1rem;
   }
 }
