@@ -14,7 +14,7 @@ export default function Contact() {
           <ScrollReveal direction="right" delay={0.1}>
             <div className={styles.infoBlock}>
               <span className={styles.icon}><FaPhoneAlt /></span>
-              <span className={styles.infoText}>+971 54 578 4247</span>
+              <span className={styles.infoText}>+971 50 212 5795</span>
             </div>
           </ScrollReveal>
           <ScrollReveal direction="right" delay={0.2}>
