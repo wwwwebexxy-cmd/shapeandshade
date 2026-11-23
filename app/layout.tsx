@@ -60,7 +60,7 @@ const jsonLd = {
   "image": "https://shapesandshades.ae/logo-shapes-shade.png",
   "@id": "https://shapesandshades.ae/",
   "url": "https://shapesandshades.ae/",
-  "telephone": "+971545784247",
+  "telephone": "+971502125795",
   "email": "Sales@shapesandshades.ae",
   "address": {
     "@type": "PostalAddress",
